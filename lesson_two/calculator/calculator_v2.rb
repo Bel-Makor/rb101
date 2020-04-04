@@ -45,7 +45,6 @@ loop do
     else
       prompt("Hmm... that doesn't look like a valid number")
     end
-
   end
 
   number2 = ''
@@ -81,7 +80,6 @@ loop do
 
   prompt("#{operation_to_message(operator)} the two numbers...")
 
-
   result = case operator
            when '1'
              number1.to_i() + number2.to_i()
@@ -91,7 +89,7 @@ loop do
              number1.to_i() * number2.to_i()
            when '4'
              number1.to_f() / number2.to_f()
-  end
+           end
 
   prompt("The result is #{result}")
 
