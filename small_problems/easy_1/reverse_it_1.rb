@@ -1,0 +1,24 @@
+# Write a method that takes one argument, a string,
+# and returns a new string with the words in
+# reverse order.
+
+def reverse_sentence(sentence)
+  sentence.split(' ').reverse.join(' ')
+end
+
+def reversed_sentence(sentence)
+  sentence.split.reverse.join(' ')
+end
+
+puts ' '
+puts 'Running my solution: '
+puts reverse_sentence('') == ''
+puts reverse_sentence('Hello World') == 'World Hello'
+puts reverse_sentence('Reverse these words') == 'words these Reverse'
+puts ' '
+puts '-' * 30
+puts 'Running Launch School solution: '
+puts reversed_sentence('') == ''
+puts reversed_sentence('Hello World') == 'World Hello'
+puts reversed_sentence('Reverse these words') == 'words these Reverse'
+puts ' '
